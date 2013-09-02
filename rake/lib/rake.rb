@@ -1,5 +1,5 @@
 require "rake/version"
 
 module Rake
-  # Your code goes here...
+  gem 'simple_form'
 end
