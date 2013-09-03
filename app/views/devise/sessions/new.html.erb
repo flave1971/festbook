@@ -1,6 +1,6 @@
 <div class="row">
-	<div class="span4">
-		<%= simple_form_for(resource, :as => resource_name, :url => session_path(resource_name), html: {class: "well"}) do |f| %>
+	<div class="span4 well height1100">
+		<%= simple_form_for(resource, :as => resource_name, :url => session_path(resource_name)) do |f| %>
 	<fieldset>
 		<legend>Sign In</legend>
 	  <%= f.input :email %>
@@ -15,7 +15,7 @@
 
 		<%= render "devise/shared/links" %>
 	</div>
-	<div class="span8">
+	<div class="span7 well height1100">
 		<h2>Signing in is easy and secure</h2>
 	</div>
 </div>
