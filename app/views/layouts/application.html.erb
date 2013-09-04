@@ -7,11 +7,20 @@
   <%= csrf_meta_tags %>
 </head>
 <body>
-	<div class="container">
+	<div class="container-fluid">
+		<div class="row-fluid">
+  			<div class = "span12 well page-header">
+    			<div class = "span4 t_logo">
+      				<img src="../assets/logo.png"/>
+    			</div>
+    			
+    		</div>
+  		</div>
+	
 		<div class=" navbar navbar-inverse navbar-fixed-top">
 			<div class="navbar-inner">
 				<div class="container">
-					<a class="brand" href="#">*FestBook*</a>
+					<a class="brand" href="#">Tannerfest 2014</a>
 				    <ul class="nav">
 				      <li><%= link_to "All Statuses", statuses_path %></li>
 				    </ul>

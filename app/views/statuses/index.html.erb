@@ -1,14 +1,14 @@
-<div class="row">
-  <div class = "span4 well height1100">
-    <div class="page-header">
-      <legend>All Posts</legend>
-    </div>
+<div class="row-fluid">
+  <div class = "span4 well height800">
+    
+      <legend>All FestBook Posts</legend>
+    
 
     <%= link_to "Post a New Status", new_status_path, class: "btn btn-warning" %>
 
     <% @statuses.each do |status| %>
       <div class="status">
-        <strong><%= status.user.full_name %></strong>
+        <strong><%= status.user.full_name %></strong><br />
         <textarea class= "d_wrap"><%= status.content.to_s %></p></textarea>
         <div class="meta">
             <%= link_to time_ago_in_words(status.created_at) + " ago", status %>
@@ -21,6 +21,6 @@
     <% end %>
   </div>
 
-  <div class = "span7 well height1100">
+  <div class = "span8 well height800">
   </div>
 </div>
