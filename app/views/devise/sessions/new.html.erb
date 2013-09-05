@@ -2,14 +2,16 @@
 	<div class="span4 well height800">
 		<%= simple_form_for(resource, :as => resource_name, :url => session_path(resource_name)) do |f| %>
 	<fieldset>
-		<legend>Sign In</legend>
-	  <%= f.input :email %>
-	  <%= f.input :password %>
-	  	<% if devise_mapping.rememberable? -%>
-	    <div><%= f.input :remember_me, as: :boolean %></div>
-	  <% end -%>
+		<legend>Sign in to Tannerfest</legend>
+		<div class="status">
+		  <div class="white"><%= f.input :email %></div>
+		  <div class="white"><%= f.input :password %></div>
+		  	<div><% if devise_mapping.rememberable? -%></div>
+		    <div class="white"><%= f.input :remember_me, as: :boolean %></div>
+		  <% end -%>
+		</div><br /><br />
 
-	  <div><%= f.button :submit, "Sign in" %></div>
+	  <%= f.button :submit, "Sign in", :class=>"btn btn-success"%>
 	</fieldset>
 		<% end %>
 

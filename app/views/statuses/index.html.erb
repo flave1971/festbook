@@ -1,14 +1,15 @@
 <div class="row-fluid">
   <div class = "span4 well height800">
     
-      <legend>All FestBook Posts</legend>
+      <div class="on_cow"><legend>All FestBook Posts</legend></div>
     
 
-    <%= link_to "Post a New Status", new_status_path, class: "btn btn-warning" %>
+    <%= link_to "Post a New Status", new_status_path, class: "btn btn-success" %>
+    <br /><br />
 
     <% @statuses.each do |status| %>
       <div class="status">
-        <strong><%= status.user.full_name %></strong><br />
+        <p class="white"><%= status.user.full_name %></p>
         <textarea class= "d_wrap"><%= status.content.to_s %></p></textarea>
         <div class="meta">
             <%= link_to time_ago_in_words(status.created_at) + " ago", status %>
@@ -17,7 +18,7 @@
               <%= link_to "Delete", status, method: :delete, data: { confirm: "Are you sure you want to delete this post?"} %>
             </span>
         </div>
-      </div>
+      </div><br />
     <% end %>
   </div>
 

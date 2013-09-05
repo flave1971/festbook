@@ -1,5 +1,5 @@
 body{
-	background-image:url(/assets/mike.jpg);
+	background-image:url(/assets/mike.png);
 }
 
 .container-fluid{
@@ -12,31 +12,72 @@ body{
 	overflow-y:auto;
 	background-image: url(/assets/cow.png);
 	background-size:100%;
-
 }
 
 .cow{
 	margin-right: auto;
 	margin-left:auto;
+	border-radius:10px;
+	height:65px;
+}
+
+/*.on_cow{
+	background-color:rgba(0,92,0,.5);
+}*/
+
+.t_logo{
+	border-radius:10px;
+}
+
+legend{
+	color:darkgreen;
+	padding:8px;
+	
+
+}
+
+.meta{
+	
+	padding-left:8px;
+}
+
+.status{
+	background-color:rgba(0,92,0,.5);
+	border-radius:10px;
+	margin-bottom: 10px;
+
+
+}
+
+.white{
+	color:white;
+	padding-left:8px;
 }
 
 
+
+.margin-bot10{
+	margin-bottom: 100px;
+}
 
 
 
 .d_wrap{
 	resize:none;
-	width:95%;
+	width:87%;
+	margin-left: 8px;
+	
 }
 
 .well{
-	box-shadow: 3px 5px 5px 2px rgba(81,81,81,.7);
+	box-shadow: 3px 5px 5px 2px rgba(0,81,0,.7);
 }
 
 
 
 .page-header{
 	border-radius:10px;
+	background-image: url(/assets/sunset.jpg)
 }
 
 .span4 .well .t_logo{
@@ -50,7 +91,9 @@ height: 40px;
 margin-left:30px;
 overflow-x:hidden;
 
-box-shadow: 1px 1px 1px 1px black inset;
+box-shadow: 1px 1px 1px 5px rgba(0,81,0,.6)  inset;
+border-radius:10px;
+background-color: rgba(100,149,237,.3);
 
 }
 
@@ -70,6 +113,7 @@ padding:0;
 margin:0;
 position:relative;
 font-size: 18px;
+color:white;
 -webkit-animation-name:scrolltext;
 -webkit-animation-duration:10s;
 -webkit-animation-timing-function:linear;
@@ -77,6 +121,16 @@ font-size: 18px;
 -webkit-animation-iteration-count:infinite;
 -webkit-animation-direction:forward;
 -webkit-animation-play-state:running;
+animation-name:scrolltext;
+animation-duration:10s;
+animation-timing-function:linear;
+animation-delay:0s;
+animation-iteration-count:infinite;
+animation-direction:forward;
+animation-play-state:running;
+
+
+
 	
 }
 
