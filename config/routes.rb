@@ -1,8 +1,20 @@
 Festbook::Application.routes.draw do
+  get "profiles/show"
+
   devise_for :users
 
+  devise_scope :user do
+    get 'register', to: 'devise/registrations#new', as: :register
+    get 'login', to: 'devise/sessions#new', as: :login
+    get 'logout', to: 'devise/sessions#destroy', as: :logout
+  end
+
   resources :statuses
+  #root to: redirect("http://www.flavesoft.com")
   root to: 'statuses#index'
+
+  match "/flavesoft" => redirect("http://www.flavesoft.com"), :as => :flavesoft
+
 
 
   # The priority is based upon order of creation:
